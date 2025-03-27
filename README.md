@@ -6,8 +6,6 @@ This repository contains the backend code for the **Clothing E-commerce Website*
 - **Product Management**: Allows admins to add, update, and remove clothing products.
 - **User Authentication & Authorization**: Implements secure login and registration using JWT.
 - **Shopping Cart & Orders**: Enables users to add products to the cart, place orders, and track purchases.
-- **Payment Integration**: Supports secure online payments through Stripe/Razorpay.
-- **Review & Ratings**: Users can leave reviews and rate products.
 - **Admin Dashboard**: Admins can manage products, orders, and user roles.
 
 ## Technologies Used
@@ -37,7 +35,6 @@ Master tables store reference data that remains relatively static and is used to
 | Brand       | Contains names of various clothing brands. |
 | Size        | Stores available sizes (S, M, L, XL, etc.). |
 | Color       | Stores available colors for products. |
-| Payment Method | Stores different payment options available. |
 
 ### **Transaction Tables:**
 Transaction tables store dynamic data that is frequently updated as part of regular operations within the application. These tables often have foreign keys to establish relationships with master tables and maintain data integrity.
@@ -48,7 +45,6 @@ Transaction tables store dynamic data that is frequently updated as part of regu
 | Products    | Contains product details including name, price, stock, and category. |
 | Cart        | Stores items added to the shopping cart by users. |
 | Orders      | Contains order details, including user ID, product ID, quantity, and status. |
-| Payments    | Stores transaction details for each order. |
 | Reviews     | Contains user reviews and ratings for products. |
 
 ## **REST APIs:**
